@@ -1,4 +1,4 @@
-##Read your student list
+##Create the project which you put all files together. Read your student list
 student.df <- read.csv("lab01-marks-c-1.csv", header = TRUE, stringsAsFactors = FALSE)
 mark.df <- data.frame(matrix(vector(), ncol = 7))
 colnames(mark.df) <- names(student.df)
@@ -37,6 +37,6 @@ for (i in 1:std.num){
 }
 
 
-##Export your marks to csv file
+##Export your marks to csv file, please choose your own file path
 write.table(mark.df, "/Users/Joy/Documents/UoA/Lab01-marks-c-1.csv", row.names = FALSE, sep = ",")
 
