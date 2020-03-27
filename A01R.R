@@ -4,8 +4,8 @@ mark.df <- data.frame(matrix(vector(), ncol = 7))
 colnames(mark.df) <- names(student.df)
 
 #Get total student number
-#std.num<- nrow(student.df)
-std.num = 3
+std.num<- nrow(student.df)
+
 
 #filenames <- paste("immunisation", "ethnicity", i, 6, "months.csv", sep = "-")
 ##make changes for some student
