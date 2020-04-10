@@ -8,8 +8,8 @@
 # Read your student list
 student.df <- read.csv("A1-marks-c-1.csv", header = TRUE, stringsAsFactors = FALSE)
 # Get total student number
-#std.num<- nrow(student.df)
-std.num <- 2
+std.num<- nrow(student.df)
+
 
 # Initialze the output dataframechro
 mark.df <- data.frame(matrix(vector(), ncol = 9))
@@ -23,11 +23,6 @@ for (i in 1:std.num){
   stdId <- student[2]
   
   cat("You are now marking ", as.character(studentname))
-  
-  # Use Google Chrome to check appearence
-  #chromecmd <- paste("open -a 'Google Chrome' submissions/*",stdId,"*", sep = "")
-  #chromecmd
-  #system(chromecmd)
   
   #Use mac preview to check the apprearence
   previewcmd <- paste("qlmanage -p lab01error/*",stdId,"*", sep = "")
@@ -43,7 +38,7 @@ for (i in 1:std.num){
   ## Enter Css marks
   mark02 = as.numeric(readline(prompt = "Enter the Css controling repetition marks (2 marks total) --> "))
   
-  # Enter indention mark: 2 marks, only up to the line about Perl, Lua, Groovy.
+  # Enter indention mark: 3 marks
   mark03 =  as.numeric(readline(prompt = "Enter Indentation marks (3 marks total)--> ")) 
   
   ## Enter the validation marks 
@@ -54,7 +49,7 @@ for (i in 1:std.num){
   
   
   
-  #Convert total marks based on 1. 
+  #Calculate the toal marks
   total = sum(mark01, mark02, mark03, mark04,mark05)
   
   # Add the marks into the csv file
