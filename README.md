@@ -10,3 +10,5 @@ Auto-marker for Assignment 01[Marking for Assignment](Assign01Marker.R)
 Auto-marker for Lab 03[Marking for file extensions](Lab3 auto marker.R)
 
 Auto-marker for Lab 04[Marking for xml, using xmllint to auto validate the file](lab04marker.R)
+
+Auto-marker for Assignment 02[Marking for xml and database design](A02marker.R)
